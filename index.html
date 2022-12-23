@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clc</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <img src="./clocklogo.png" alt="clc Image">
+    </div>
+    <div>
+        <p id="message">The message and Image <br> will change according <br> to the time</p>
+    </div>
+    <div id="clc">
+        <p>TIME</p>
+        <div class="clctime" id="hrs">
+            <p style="top: -10px; font-size: xx-large;" class="clocking" id="hours">00 <br>hours</p>
+        </div>
+        <h1 style="margin-top: 40.44px;" id="min">:</h1>
+        <div class="clctime">
+            <p style="top: -10px;font-size: xx-large" class="clocking" id="minutes">00 <br>mins</p>
+        </div>
+        <h1 style="margin-top: 40.44px;" id="second">:</h1>
+        <div class="clctime">
+            <p style="top: -10px; font-size: xx-large" class="clocking" id="seconds">00 <br>secs</p>
+        </div>
+        <div id="AM">
+            <p id="DN">AM</p>
+        </div>
+    </div>
+    <div id="shade1"></div>
+    <div id="shade2"></div>
+    <div id="schedule">
+        <div class="items">
+            <img src="sun.jpg" alt="" class="imageSchedule">
+            <p>Set wake up time</p>
+            <select name="" class="dropdown" id="wake_time">
+                <option value="8:00 AM-9:00 PM" > 8:00 AM-9:00 PM</option>
+                <option value="9:00 PM-10:00 PM" >  9:00 PM-10:00 PM</option>
+                <option value="10:00 AM-11:00 PM" > 10:00 AM-11:00 PM</option>
+                <option value="11:00 PM-12:00 AM" >11:00 PM-12:00 AM</option>
+                <option value="12:00 pM-1:00 PM" >12:00 pM-1:00 PM</option>
+                <option value="1:00 PM-2:00 PM" >1:00 PM-2:00 PM</option>
+                <option value="2:00 pM-3:00 PM" >2:00 pM-3:00 PM</option>
+                <option value="3:00 PM-4:00 PM" >3:00 PM-4:00 PM</option>
+                <option value="4:00 pM-5:00 PM" >4:00 pM-5:00 PM</option>
+                <option value="5:00 PM-6:00 PM" >5:00 PM-6:00 PM</option>
+                <option value="6:00 AM-7:00 PM" >6:00 AM-7:00 PM</option>
+                <option value="7:00 PM-8:00 PM" >7:00 PM-8:00 PM</option>
+               
+                
+            </select>
+        </div>
+        <div class="items">
+            <img src="lunchtime.jpg" alt="" class="imageSchedule">
+            <p>Set lunch time</p>
+            <select style="left: 98px;" name="" class="dropdown" id="lunch_time">
+                <option value="12 AM - 01 PM" >12 AM - 01 PM</option>
+                <option value="01 PM - 02 PM" >01 PM - 02 PM</option>
+                <option value="02 PM - 03 PM" >02 PM - 03 PM</option>
+                <option value="03 PM - 04 PM" >03 PM - 04 PM</option>
+                <option value="04 PM - 05 PM" >04 PM - 05 PM</option>
+                <option value="05 PM - 06 PM" >05 PM - 06 PM</option>
+                <option value="06 AM - 07 PM" >06 AM - 07 PM</option>
+                <option value="07 PM - 08 PM" >07 PM - 08 PM</option>
+                <option value="08 AM - 09 PM" >08 AM - 09 PM</option>
+                <option value="09 PM - 10 PM" >09 PM - 10 PM</option>
+                <option value="10 AM - 10 PM" >10 AM - 10 PM</option>
+                <option value="11 PM - 10 AM" >11 PM - 10 AM</option>
+                <option value="12 pM - 10 PM" >12 pM - 10 PM</option>
+                
+            </select>
+        </div>
+        <div class="items">
+            <img src="naptime.jpg" alt="" class="imageSchedule">
+            <p>Set nap time</p>
+            <select style="left: 110px;" name="" class="dropdown" id="nap_time">
+                <option value= "04 PM - 05 PM">04 PM - 05 PM</option>
+                <option value= "5:00 PM-06 PM">5:00 PM-06 PM</option>
+                <option value= "6:00 AM-07 PM">6:00 AM-07 PM</option>
+                <option value= "7:00 PM-08 PM">7:00 PM-08 PM</option>
+                <option value= "8:00 AM-09 PM">8:00 AM-09 PM</option>
+                <option value= "9:00 PM-10 PM">9:00 PM-10 PM</option>
+                <option value=" 10:00 AM-11 PM">10:00 AM-11 PM</option>
+                <option value=" 11:00 PM-12 AM">11:00 PM-12 AM</option>
+                <option value=" 12:00 pM-01 PM">12:00 pM-01 PM</option>
+            </select>
+        </div>
+        <div class="items">
+            <img src="naptime.jpg" alt="" class="imageSchedule">
+            <p>Set night time</p>
+            <select style="left: 100px;" name="" class="dropdown" id="night_time">
+                <option value="04 PM - 05 PM" >04 PM - 05 PM</option>
+                <option value="04 PM - 05 PM" >04 PM - 05 PM</option>
+                <option value="05 PM - 06 PM" >05 PM - 06 PM</option>
+                <option value="06 AM - 07 PM" >06 AM - 07 PM</option>
+                <option value="07 PM - 08 PM" >07 PM - 08 PM</option>
+                <option value="08 AM - 09 PM" >08 AM - 09 PM</option>
+                <option value="09 PM - 10 PM" >09 PM - 10 PM</option>
+                <option value="10 AM - 11 PM" >10 AM - 11 PM</option>
+                <option value="11 PM - 12 AM" >11 PM - 12 AM</option>
+                <option value="12 pM - 01 PM" >12 pM - 01 PM</option>
+            </select>
+        </div>
+    </div>
+    <div id="goodmorning">
+        <h2 id="blog">GOOD MORNING!! WAKE UP !!</h2>
+    </div>
+    <div>
+
+        <button id="alarm"> Set Alarm</button>
+    </div>
+    <div id="sched">
+        <span id="IWakeup">Wake Up Time : <span id="wakeup"> 10AM - 11AM </span></span>
+        <br><span id="ILunch"> Lunch Time : <span id="lunch">00-00 </span> </span>
+        <br><span id="INap">Nap Time : <span id="nap">00-00 </span></span>
+        <br><span id="INight">Night Time : <span id="night"> 00-00 </span></span>
+    </div>
+    <div id="breakfast">
+        <h2 id="breakfast1">GRAB SOME HEALTHY BREAKFAST!!!</h2>
+    </div>
+    <div id="alarmmessage">
+        <p>Time will be updated here after clicking on "Set Alarm"</p>
+    </div>
+    <div>
+        <p id="note">Note: Go to Artboard 3(Assets) to see all the assets used in this project</p>
+    </div>
+    <div>
+        <img id="component" src="Component.jpg" alt="">
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
